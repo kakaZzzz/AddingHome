@@ -1,0 +1,20 @@
+网站服务器相关资料
+====================
+
+	阿里云vps
+	
+	操作系统: 
+		CentOS 6.3
+
+	web环境: 
+		php+mysql+nginx,使用了lnmp一键安装包进行安装，安装命令:wget -c http://soft.vpser.net/lnmp/lnmp1.0-full.tar.gz && tar zxvf lnmp1.0-full.tar.gz && cd lnmp1.0-full && ./centos.sh
+		更多内容请移步到http://www.lnmp.org
+
+	相关命令:
+		Add VirtualHost : /root/vhost.sh
+	
+	相关目录:
+		mysql dir:   /usr/local/mysql
+		php dir:     /usr/local/php
+		nginx dir:   /usr/local/nginx
+
