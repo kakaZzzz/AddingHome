@@ -25,9 +25,9 @@ AddingHome
         		"results": [
         			{
         				"data": "2013-12-25",
-        				"eventType": 1,
-        				"hash": "articl=1234&page=2",
-                                        "title": "吃苹果",
+        				"eventType": 102,
+        				"hash": "/20131230/1/",
+                        "title": "吃苹果",
         				"description": "丫今儿该吃苹果了",
         				"expire": "2013-12-30",
         				"icon": "default.ico",
