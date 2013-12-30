@@ -11,7 +11,7 @@ AddingHome
 
 ###日程表
 
-    1. 请求http://addinghome.com/schedule.php?p=2013-12-30&m=3+4
+    1. 请求http://addinghome.com/api/schedule.php?p=2013-12-30&m=3+4
     2. 根据p和m参数，分析出具体日期范围
         ——从周到天数转换：(n-1)*7+1~n*7
             ——例如：第3周15~21，第4周22~28
