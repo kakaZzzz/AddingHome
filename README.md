@@ -39,3 +39,9 @@ AddingHome
         	},
         	"m4": {...}
         }
+
+###保存IOS设备token
+
+    1. 请求http://addinghome.com/api/iosToken.php?t=740f4707bebcf74f9b7c25d48e3358945f6aa01da5ddb387462c7eaf61bb78ad
+    2. token长度为64字节
+    3. 保存到数据库adding_base/app_ios_devices
