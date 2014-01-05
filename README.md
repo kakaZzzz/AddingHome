@@ -47,3 +47,7 @@ AddingHome
     3. 保存到数据库adding_base/app_ios_devices
     
     备注:保存数据成功返回 0； 保存失败返回 1； token长度不符则返回 2； 
+    
+###只访问Blog的文章内容
+    请调用:http://www.addinghome.com/blog/app/文章id 
+    例如：http://www.addinghome.com/blog/app/1
