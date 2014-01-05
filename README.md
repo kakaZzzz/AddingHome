@@ -11,7 +11,7 @@ AddingHome
 
 ###日程表
 
-    1. 请求http://addinghome.com/api/schedule.php?p=2013-12-30&m=3+4
+    1. 请求http://addinghome.com/api/schedule?p=2013-12-30&m=3+4
     2. 根据p和m参数，分析出具体日期范围
         ——从周到天数转换：(n-1)*7+1~n*7
             ——例如：第3周15~21，第4周22~28
@@ -42,6 +42,8 @@ AddingHome
 
 ###保存IOS设备token
 
-    1. 请求http://addinghome.com/api/iosToken.php?t=740f4707bebcf74f9b7c25d48e3358945f6aa01da5ddb387462c7eaf61bb78ad
+    1. 请求http://addinghome.com/api/iostoken?t=740f4707bebcf74f9b7c25d48e3358945f6aa01da5ddb387462c7eaf61bb78ad
     2. token长度为64字节
     3. 保存到数据库adding_base/app_ios_devices
+    
+    备注:保存数据成功返回 0； 保存失败返回 1； token长度不符则返回 2； 
