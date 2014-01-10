@@ -25,14 +25,14 @@ AddingHome
         		"results": [
         			{
         				"data": "2013-12-25",
-        				"eventType": 102,
+        				"image": "addinghome.jpg",
         				"hash": "/20131230/1/",
                         "title": "吃苹果",
         				"description": "丫今儿该吃苹果了",
         				"expire": "2013-12-30",
         				"icon": "default.ico",
         				"bg": "0xfff",
-        				...
+        				"remind": 0
         			},
         			{...}
         		]
