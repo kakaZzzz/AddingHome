@@ -64,7 +64,7 @@ AddingHome
 
 ###日程表增强版
 
-    1. 新的接口名"schedule_new"，请求http://addinghome.com/api/schedule_new?p=2013-12-30&t=2014-1-16&w=3+4
+    1. 新的接口名"schedule_new"，请求http://addinghome.com/api/schedule_new?p=2013-12-30&t=2014-1-28&w=3+4
     2. 其他功能同日程表
     3. w3里数据条目，增加空日期项，即只有“data”，其他都为空，按顺序排列
     4. 和w3平级，增加“today”，具体值来自url中“t”减去“p”的值，里面的每项查询条件是remind=1 && data <= today && expire >= today
