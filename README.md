@@ -51,3 +51,13 @@ AddingHome
 ###只访问Blog的文章内容
     请调用:http://www.addinghome.com/blog/app/文章id 
     例如：http://www.addinghome.com/blog/app/1
+    
+###提取post内容脚本
+    
+    1. 连接addinghome库里的wp_posts（ID）和wp_terms_relationships（object_id）表
+    2. 找到term_taxonomy_id为x、y、z（可能更多）的具体条目
+    3. 把结果新增到adding_base库的app_events_for_all表里
+        ID->/blog/archives/ID->hash
+        post_title->title
+        post_content->截取30个字符（可调）->description
+    4. app_events_for_all表里增加一个post_id字段，第3步操作里，如果表里有相同id则修改，反之新增
