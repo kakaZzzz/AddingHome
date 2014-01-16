@@ -61,3 +61,60 @@ AddingHome
         post_title->title
         post_content->截取30个字符（可调）->description
     4. app_events_for_all表里增加一个post_id字段，第3步操作里，如果表里有相同id则修改，反之新增
+
+###日程表增强版
+
+    1. 新的接口名"schedule_new"，请求http://addinghome.com/api/schedule_new?p=2013-12-30&t=2014-1-16&w=3+4
+    2. 其他功能同日程表
+    3. w3里数据条目，增加空日期项，即只有“data”，其他都为空，按顺序排列
+    4. 和w3平级，增加“today”，具体值来自url中“t”减去“p”的值，里面的每项查询条件是remind=1 && data <= today && expire >= today
+    5. 最后输出json格式
+        {
+        	"w3": {
+        		"resultCount": 3,
+        		"results": [
+        			{
+        				"data": "2013-12-25",
+        				"image": "",
+        				"hash": "",
+                        "title": "",
+        				"description": "",
+        				"expire": "",
+        				"icon": "",
+        				"bg": "",
+        				"remind": 0
+        			},
+        			{
+        				"data": "2013-12-25",
+        				"image": "addinghome.jpg",
+        				"hash": "/20131230/1/",
+                        "title": "吃苹果",
+        				"description": "丫今儿该吃苹果了",
+        				"expire": "2013-12-30",
+        				"icon": "default.ico",
+        				"bg": "0xfff",
+        				"remind": 0
+        			},
+        			{...}
+        		]
+        	},
+        	"w4": {...},
+        	
+        	"today": {
+        	    "resultCount": 2,
+        		"results": [
+        			{
+        				"data": "2013-12-25",
+        				"image": "addinghome.jpg",
+        				"hash": "/20131230/1/",
+                        "title": "吃苹果",
+        				"description": "丫今儿该吃苹果了",
+        				"expire": "2013-12-30",
+        				"icon": "default.ico",
+        				"bg": "0xfff",
+        				"remind": 1
+        			},
+        			{...}
+        		]
+        	}
+        }
