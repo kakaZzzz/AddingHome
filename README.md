@@ -57,10 +57,10 @@ AddingHome
     1. 连接addinghome库里的wp_posts（ID）和wp_terms_relationships（object_id）表
     2. 找到term_taxonomy_id为x、y、z（可能更多）的具体条目
     3. 把结果新增到adding_base库的app_events_for_all表里
-        ID->/blog/archives/ID->hash
-        post_title->title
-        post_content->过滤html代码后，截取前30个字符（可调）->description
-        post_content->正则匹配到.png/jpg/gif文件地址后，改成小图文件名filename-150x150.xxx->image
+        hash： ID->/blog/archives/ID
+        title： post_title
+        description： post_content->过滤html代码后，截取前30个字符（可调）
+        image： post_content->正则匹配到.png/jpg/gif文件地址后，改成小图文件名filename-150x150.xxx
     4. app_events_for_all表里增加一个post_id字段，第3步操作里，如果表里有相同id则修改，反之新增
 
 ###日程表增强版
